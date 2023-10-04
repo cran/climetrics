@@ -135,9 +135,9 @@ plot(s2)
 
 
 
-ve <- ccm(pr.t,tmin.t,tmean.t,tmax.t,t1='1991/2000',t2='2010/2020',stat=c('gve','dve'))
+#ve <- ccm(pr.t,tmin.t,tmean.t,tmax.t,t1='1991/2000',t2='2010/2020',stat=c('gve','dve'))
 
-plot(ve)
+#plot(ve)
 
 # following, the extreme argument is needed for localExtreme (lce) metric:
 s3 <- ccm(pr.t,tmin.t,t1='1991/2000',t2='2010/2020',stat=c('localExtreme','sed')

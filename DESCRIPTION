@@ -1,11 +1,11 @@
 Package: climetrics
 Type: Package
 Title: Climate Change Metrics
-Version: 1.0-11
-Date: 2023-02-01
-Depends: methods, sp (>= 1.2-0), R (>= 3.5.0), rts
+Version: 1.0-12
+Date: 2023-10-02
+Depends: methods, R (>= 3.5.0), rts
 Imports: raster, terra, zoo, yaImpute, xts
-Suggests: R.rsp, dplyr, tidyr
+Suggests: R.rsp
 VignetteBuilder: R.rsp
 Description: A framework that facilitates spatio-temporal analysis of climate dynamics through exploring and measuring different dimensions of climate change in space and time.
 License: GPL (>= 3)
@@ -22,10 +22,10 @@ Authors@R: c(
 			person("Miguel", "Araujo", role = "aut")
 	)
 NeedsCompilation: no
-Packaged: 2023-02-01 13:14:09 UTC; babak
+Packaged: 2023-10-02 21:53:43 UTC; babak
 Author: Shirin Taheri [cre, aut] (<https://orcid.org/0000-0002-0303-3145>),
   Babak Naimi [aut] (<https://orcid.org/0000-0001-5431-2729>),
   Miguel Araujo [aut]
 Maintainer: Shirin Taheri <taheri.shi@gmail.com>
 Repository: CRAN
-Date/Publication: 2023-02-03 20:02:34 UTC
+Date/Publication: 2023-10-04 17:00:02 UTC

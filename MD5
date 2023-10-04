@@ -1,5 +1,5 @@
-152558eb1d9e58bfdb7fdcfa584d2291 *DESCRIPTION
-08c14b13900df747d094177b2a21d744 *NAMESPACE
+edfe42fa92224157640eb7fe2d03211d *DESCRIPTION
+31b60401dc542378a30c812ca5b11af7 *NAMESPACE
 4ad35eb4957a2b6b768e1626d2a7a5e2 *R/analogus.R
 f8fdf6eba213f10e25501421768a2136 *R/applyMonths.R
 d6114c89282da0a2799c64f4e4cbe767 *R/ccm.R
@@ -11,7 +11,7 @@ c394450b1b855370633eead7e9b1b01e *R/localExtreme.R
 d27151eb21d1423e05db7445358ac357 *R/sed.R
 bd7eff85e038acf819f49155afcb55e8 *R/util.R
 e5188e008243d286fb35a8b27bd8f60d *R/velocity.R
-238140c079f008cac33bb49bd1cbf16a *build/vignette.rds
+3f1d08657470fd18186ce5ae1b203205 *build/vignette.rds
 8599683107cd8d36db73b093e3be9fd4 *inst/doc/climetrics.pdf
 1b9b7cb2722f36e69f1328c2bb60f298 *inst/doc/climetrics.pdf.asis
 74f05c79b977fb182525b0c025019d68 *inst/external/dates.rds
@@ -25,10 +25,10 @@ e7d7f1f80f05152bca49c4e80baf5804 *inst/external/tmin.tfw
 9b46ae40a4e9203b48fb3c916c401f06 *inst/external/tmin.tif
 0f13c04f0f138273a086da1802039771 *man/aaClimate.Rd
 3e399e360b4c9175cea72e96bdbaca22 *man/applyMonths.Rd
-a9f5b33a5def18843370c45bd6da1fb7 *man/ccm.Rd
+d0369fd7c868553e589d374d7bbc784b *man/ccm.Rd
 38928f97eba37eb443f6c7c0697eb03a *man/dVelocity.Rd
 249dd8bc797e05219b880e113ecdbaa0 *man/daClimate.Rd
-228c9077d071991af4ce5712a932f509 *man/gVelocity.Rd
+b652e5a1c19ffeec7084b0501098202d *man/gVelocity.Rd
 f3560b21248a2b598405b4778af3dfe0 *man/kgc.Rd
 99dec97b1a29b58d79c96eebfa393aed *man/localExtreme.Rd
 b5fdb7915b0b658b741a8b6471d2369b *man/novelClimate.Rd
