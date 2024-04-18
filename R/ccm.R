@@ -1,7 +1,7 @@
 # Authors: Shirin Taheri (taheri.shi@gmail.com); Babak Naimi (naimi.b@gmail.com)
 # Date :  Nov. 2020
-# Last update :  Jan 2023
-# Version 2.6
+# Last update :  April 2024
+# Version 2.7
 # Licence GPL v3
 #--------
 
@@ -60,30 +60,30 @@ setMethod('ccm', signature(x='SpatRasterTS'),
               if (missing(extreme)) stop('"extreme" is needed...!')
               #-
               if (length(xx) > 2) {
-                xx <- xx[1:2]
+                .xx <- xx[1:2]
                 
                 if (verbose) cat('\nlocalExtreme metric can be calculated using either one or two climate variables... only the first two variables are used!')
                 else warning('localExtreme metric can be calculated using either one or two climate variables... only the first two variables are used!')
                 
+              } else .xx <- xx
+              #-
+              if (length(extreme) > length(.xx)) {
+                warning(paste0('number of extreme probabilities (',length(extreme),') should be equal to the number of climate parameters (',length(xx),'); Only the first ',length(.xx),' values from extreme is used!'))
+                extreme <- extreme[1:length(.xx)]
               }
               #-
-              if (length(extreme) > length(xx)) {
-                warning(paste0('number of extreme probabilities (',length(extreme),') should be equal to the number of climate parameters (',length(xx),'); Only the first ',length(xx),' values from extreme is used!'))
-                extreme <- extreme[1:length(xx)]
-              }
-              #-
-              if (length(extreme) < length(xx)) stop('extreme probabilities should be provided for both climate parameters')
+              if (length(extreme) < length(.xx)) stop('extreme probabilities should be provided for both climate parameters')
               #-
               if (any(extreme > 1 | extreme < 0)) stop('extreme is a probability value that should be within the range of 0 and 1')  
               #-------------------------
               x1 <- x2 <- list()
-              for (i in 1:length(xx)) {
-                x1[[i]] <- xx[[i]][[t1]]@raster
-                x2[[i]] <- xx[[i]][[t2]]@raster
+              for (i in 1:length(.xx)) {
+                x1[[i]] <- .xx[[i]][[t1]]@raster
+                x2[[i]] <- .xx[[i]][[t2]]@raster
               }
               
               o[['localExtreme']] <- .eeChange(x1,x2,extreme)
-              
+              rm(.xx);gc()
             }
             #-------
             if ('novelClimate' %in% stat) {
@@ -104,11 +104,6 @@ setMethod('ccm', signature(x='SpatRasterTS'),
                 } else {
                   for (i in 2:length(nn)) {
                     nn[i] <- .argMatch(nn[i],nstat)  
-                    
-                    # if (nn[i] %in% c('precipitation','prec','p','pr','precip')) nn[i] <- 'precip'
-                    # else if (nn[i] %in% c('precipitation','prec','p','pr','precip')) nn[i] <- 'precip'
-                    # else if (nn[i] %in% c('precipitation','prec','p','pr','precip')) nn[i] <- 'precip'
-                    # else if (nn[i] %in% c('precipitation','prec','p','pr','precip')) nn[i] <- 'precip'
                   }
                   if (any(is.na(nn))) stop('The aaClimate metric needs precipitation, minimum and maximum temperature (optional also mean temperature). The input variables are not identified! Specify their names in the names argument!')
                   
@@ -182,7 +177,7 @@ setMethod('ccm', signature(x='SpatRasterTS'),
               p2 <- app(xx[[2]][[t1]]@raster, 'mean',na.rm=TRUE)
               f2 <- app(xx[[2]][[t2]]@raster, 'mean',na.rm=TRUE)
               
-              o[['velocity']] <-  .velocMTerra(p1,p2,f1,f2,...)
+              o[['velocity']] <-  .velocMTerra(p1,p2,f1,f2)
               
             } 
             

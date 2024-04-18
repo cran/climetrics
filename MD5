@@ -1,8 +1,8 @@
-edfe42fa92224157640eb7fe2d03211d *DESCRIPTION
+e62fa36bfac61bba0c4ec293d64bee0b *DESCRIPTION
 31b60401dc542378a30c812ca5b11af7 *NAMESPACE
 4ad35eb4957a2b6b768e1626d2a7a5e2 *R/analogus.R
 f8fdf6eba213f10e25501421768a2136 *R/applyMonths.R
-d6114c89282da0a2799c64f4e4cbe767 *R/ccm.R
+bf827472c79581e1a286493ca0bf49ba *R/ccm.R
 a7f5e54445400bc680d9a839933a34ea *R/dVelocity.R
 0ebef6eff74fe57c937609cf853208f2 *R/gVelocity.R
 70fe7044382b2ff1b10b9633ca12011c *R/kgc.R
@@ -10,8 +10,8 @@ c394450b1b855370633eead7e9b1b01e *R/localExtreme.R
 04fef752bc9e8d794966042979c5f05f *R/novelClimate.R
 d27151eb21d1423e05db7445358ac357 *R/sed.R
 bd7eff85e038acf819f49155afcb55e8 *R/util.R
-e5188e008243d286fb35a8b27bd8f60d *R/velocity.R
-3f1d08657470fd18186ce5ae1b203205 *build/vignette.rds
+f1499d2296457c6af9c5dd2e6cc9f50c *R/velocity.R
+a303aeb8dfe3471ddbe019a9fa996c67 *build/vignette.rds
 8599683107cd8d36db73b093e3be9fd4 *inst/doc/climetrics.pdf
 1b9b7cb2722f36e69f1328c2bb60f298 *inst/doc/climetrics.pdf.asis
 74f05c79b977fb182525b0c025019d68 *inst/external/dates.rds
@@ -23,6 +23,11 @@ e7d7f1f80f05152bca49c4e80baf5804 *inst/external/tmean.tfw
 5430ca00ce7d570aaa0c894ce466866d *inst/external/tmean.tif
 e7d7f1f80f05152bca49c4e80baf5804 *inst/external/tmin.tfw
 9b46ae40a4e9203b48fb3c916c401f06 *inst/external/tmin.tif
+32f9725dc81ed0eb39389e34fb400d44 *inst/tinytest/test_aaClimate.R
+fa6fb9e0a8c6477a95645f6b2be3f49a *inst/tinytest/test_localExtreme.R
+ca3356952c6ab0d7c736dd0fe35568e4 *inst/tinytest/test_novelClimate.R
+bbb61c6149987578933d0ad8059800c1 *inst/tinytest/test_sed.R
+b40f98aa0c5842917406151e011e3aa7 *inst/tinytest/test_velocity.R
 0f13c04f0f138273a086da1802039771 *man/aaClimate.Rd
 3e399e360b4c9175cea72e96bdbaca22 *man/applyMonths.Rd
 d0369fd7c868553e589d374d7bbc784b *man/ccm.Rd
@@ -35,4 +40,5 @@ b5fdb7915b0b658b741a8b6471d2369b *man/novelClimate.Rd
 4ab954b31abb286ca7d5e0059a4dde9a *man/sed.Rd
 87062230d7171921ba64dd5612b9c769 *man/temporalTrend.Rd
 9392a6738357599a57cded3cebde7ce2 *man/velocity.Rd
+29828a64810d29fb3be47556a2a0837f *tests/tinytest.R
 1b9b7cb2722f36e69f1328c2bb60f298 *vignettes/climetrics.pdf.asis
